@@ -1,20 +1,26 @@
 import './ExpenseItem.css';
 
-function ExpenseItem() {
+function ExpenseItem(props) {
 
-const expenseDate = new Date(2021, 2, 28);
-const expenseTitle = 'Car Insuarance';
-const expenseAmount = 298.76
+  const month = props.date.toLocaleString('en-US', {month: 'long'});
+  const day = props.date.toLocaleString('en-US', {day: '2-digit'});
+  const year = props.date.getFullYear();
 
   return (
     <div className='expense-item'>
-      <div>{expenseDate.toISOString()}</div>
-      <div className='expense-item__description'>
-        <h2>{expenseTitle}</h2>
+      <div>
+        <div>{month}</div>
+        <div>{day}</div>
+        <div>{year}</div>
       </div>
-      <div className='expense-item__price'>${expenseAmount}</div>
+      <div className='expense-item__description'>
+        <h2>{props.title}</h2>
+      </div>
+      <div className='expense-item__price'>${props.price}</div>
     </div>
   );
 }
 
 export default ExpenseItem;
+
+//props - share data between components using props, allow components reusable
