@@ -1,45 +1,41 @@
-import ExpenseItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses";
 
 function App() {
-
-  const expenses = [
+  const expensesArr = [
     {
-      title: 'Car Insuarance',
-      date : new Date('2022,3,22'),
-      price: 233
+      title: "Car Insuarance",
+      date: new Date("2022,3,22"),
+      price: 233,
     },
     {
-      title: 'Food Cost',
-      date : new Date('2022,8,22'),
-      price: 244
+      title: "Food Cost",
+      date: new Date("2022,8,22"),
+      price: 243,
     },
     {
-      title: 'Rent fees',
-      date : new Date('2022,10,22'),
-      price: 465
+      title: "Rent fees",
+      date: new Date("2022,10,22"),
+      price: 465,
     }
   ];
 
   return (
     //jsx by react team
     <div>
-      <h2>Let's <span id='x'>get</span> started!</h2>
-
-      <ExpenseItem
-        title={expenses[0].title}
-        date={expenses[0].date}
-        price={expenses[0].price}></ExpenseItem>
-      <ExpenseItem
-        title={expenses[1].title}
-        date={expenses[1].date}
-        price={expenses[1].price}></ExpenseItem>
-        <ExpenseItem
-        title={expenses[2].title}
-        date={expenses[2].date}
-        price={expenses[2].price}></ExpenseItem>
-   
+      <Expenses items={expensesArr}/> 
     </div>
+    //expenses main bar
+
   );
 }
 
 export default App;
+
+
+/**
+ * We use props in React to pass data from one component
+ *  to another (from a parent component to a child 
+ * component(s)). Props is just a shorter way of saying 
+ * properties. They are useful when you want the flow of 
+ * data in your app to be dynamic.
+ */
