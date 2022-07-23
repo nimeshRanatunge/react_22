@@ -1,4 +1,4 @@
-import Card from './Card';
+import Card from '../UI/Card';
 import './css/ExpenseItem.css';
 import ExpenseDate from './ExpenseDate';
 
@@ -17,12 +17,17 @@ function ExpenseItem(propsx) {
         <div>{year}</div>
       </div> */}
 
-    <ExpenseDate datey={propsx.datex}></ExpenseDate>
+      {/* 1 */}
+      <ExpenseDate datey={propsx.datex}></ExpenseDate>
+
+      {/* 2 */}
       <div className='expense-item__description'>
         <h2>{propsx.title}</h2>
-        
       </div>
+
+      {/* 3 */}
       <div className='expense-item__price'>LKR {propsx.price}</div>
+
     </Card>
   );
 }
