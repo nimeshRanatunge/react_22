@@ -13,7 +13,7 @@ function App() {
       price: 243,
     },
     {
-      title: "Rent fees",
+      title: "Rent payment",
       date: new Date("2022,10,22"),
       price: 465,
     }
@@ -30,8 +30,6 @@ function App() {
 }
 
 export default App;
-
-
 /**
  * We use props in React to pass data from one component
  *  to another (from a parent component to a child 
