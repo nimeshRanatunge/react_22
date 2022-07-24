@@ -1,33 +1,32 @@
 import Card from '../UI/Card';
 import './css/ExpenseItem.css';
 import ExpenseDate from './ExpenseDate';
+import {useState} from 'react';
 
+const ExpenseItem = (props) => {
 
-function ExpenseItem(propsx) {
+  const [title, setTitle] = useState(props.title);
 
-  // const month = props.date.toLocaleString('en-US', {month: 'long'});
-  // const day = props.date.toLocaleString('en-US', {day: '2-digit'});
-  // const year = props.date.getFullYear();
+    const clickHandler = ()=>{
+      setTitle('New!!');
+        };
 
   return (
+    // Using classes for styling purpose
     <Card className='expense-item'>
-      {/* <div>
-        <div>{month}</div>
-        <div>{day}</div>
-        <div>{year}</div>
-      </div> */}
 
       {/* 1 */}
-      <ExpenseDate datey={propsx.datex}></ExpenseDate>
+      <ExpenseDate datey={props.datex}></ExpenseDate>
 
       {/* 2 */}
       <div className='expense-item__description'>
-        <h2>{propsx.title}</h2>
+        <h2>{title}</h2>
       </div>
 
       {/* 3 */}
-      <div className='expense-item__price'>LKR {propsx.price}</div>
+      <div className='expense-item__price'>LKR {props.price}</div>
 
+      <button onClick = {clickHandler}>new</button>
     </Card>
   );
 }

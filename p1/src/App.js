@@ -1,31 +1,40 @@
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
-function App() {
+const App = () => {
   const expensesArr = [
     {
+      id: 1,
       title: "Car Insuarance",
       date: new Date("2022,3,22"),
       price: 233,
     },
     {
+      id: 2,
       title: "Food Cost",
       date: new Date("2022,8,22"),
       price: 243,
     },
     {
+      id: 3,
       title: "Rent payment",
       date: new Date("2022,10,22"),
       price: 465,
     }
   ];
 
+  const addExpenseHandler = (expense) => {
+    console.log('In app.js');
+    console.log(expense);
+  }
+
   return (
     //jsx by react team
     <div>
+      <NewExpense onAddExpense={addExpenseHandler}/>
       <Expenses items={expensesArr}/> 
     </div>
-    //expenses main bar
-
+    
   );
 }
 
