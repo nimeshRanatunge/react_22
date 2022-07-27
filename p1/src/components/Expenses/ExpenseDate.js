@@ -1,9 +1,9 @@
 import './css/Expensedate.css';
 
-const ExpenseDate = (propsy) => {
-  const month = propsy.datey.toLocaleString("en-US", { month: "long" });
-  const day = propsy.datey.toLocaleString("en-US", { day: "2-digit" });
-  const year = propsy.datey.getFullYear();
+const ExpenseDate = (props) => {
+  const month = props.datey.toLocaleString("en-US", { month: "long" });
+  const day = props.datey.toLocaleString("en-US", { day: "2-digit" });
+  const year = props.datey.getFullYear();
 
   
   return (
