@@ -2,6 +2,7 @@ import DateDivider from './DateDivider';
 import '../css/ExpenseItem.css';
 import '../css/UniversalCss.css';
 
+
 const ExpenseItem = (props)=> {
 
     const title = props.title;

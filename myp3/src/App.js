@@ -1,5 +1,5 @@
-import ExpenseAdder from "./Uis/ExpenseAdder";
 import ExpenseShow from "./Uis/ExpenseShow";
+import ExpenseAdder from "./New Expense/ExpenseAdder";
 
 const App = () => {
   const detailArray = [
@@ -29,10 +29,14 @@ const App = () => {
     },
   ];
 
+  const xyz =(incomingD)=>{
+    console.log(incomingD);
+  };
+
   return (
     
       <div>
-        <ExpenseAdder></ExpenseAdder>
+        <ExpenseAdder sendToApp={xyz}></ExpenseAdder>
         <ExpenseShow details={detailArray}></ExpenseShow>
       </div>
     
