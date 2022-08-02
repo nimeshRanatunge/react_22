@@ -1,31 +1,22 @@
-import React, { useReducer, useState } from "react";
+import React, { useState } from "react";
+import './App.css';
+import Header from './components/Header/index.js';
+import { ThemeContext, themes } from "./Providers/Themes/index.js";
 
-const ACTIONS = {
-  ADD_TODO: 'add-todo'
-}
-
-const reducer = (state, action) => {
-  
-};
-
-function App() {
-  const [state, dispatch] = useReducer(reducer, []);
-  const [name,setName] = useState('')
-
-  const handleSubmit =(e)=> {
-    e.preventDefault();
-    dispatch({type: ACTIONS.ADD_TODO})
-    setName('')
-  }
-
+const App = () => {
+  const [selectedTheme, setTheme] = useState(themes.light);
+  const handleClick = () => {
+    setTheme(selectedTheme === themes.dark ? themes.light: themes.dark);
+  };
 
   return (
-    <React.Fragment>
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={name} onChange={e=>setName(e.target.value)}/>
-      </form>
-    </React.Fragment>
+    <ThemeContext.Provider value={selectedTheme}>
+      <div>
+        <Header></Header>
+        <button onClick={handleClick}>Click</button>
+      </div>
+    </ThemeContext.Provider>
   );
-}
+};
 
-export default App;
+  export default App;
