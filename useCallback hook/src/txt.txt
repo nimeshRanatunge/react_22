@@ -1,0 +1,4 @@
+use, useCallback
+
+*Referential Equality, - UI does not reflect the state change. objects are considered equal based on their memory location and not the values
+*creating function slow, create only when it want, not create every time you render
