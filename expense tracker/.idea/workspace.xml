@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="82fc397e-a24f-4f6f-bf7b-433d2b8d539b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Chart/ChartBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chart/ChartBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Chart/ChartBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chart/ChartBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Expenses/ExpenseDate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Expenses/ExpenseDate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Expenses/ExpenseItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Expenses/ExpenseItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Expenses/Expenses.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Expenses/Expenses.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Expenses/Expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Expenses/Expenses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewExpense/ExpenseForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewExpense/ExpenseForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewExpense/NewExpense.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewExpense/NewExpense.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2D0aPrhwaTNu9LfDcuDZS41Nxe2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82fc397e-a24f-4f6f-bf7b-433d2b8d539b" name="Changes" comment="" />
+      <created>1659838436600</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659838436600</updated>
+      <workItem from="1659838438136" duration="65000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
