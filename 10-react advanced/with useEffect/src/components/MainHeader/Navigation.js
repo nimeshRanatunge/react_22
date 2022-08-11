@@ -11,7 +11,7 @@ const Navigation = (props) => {
             <a href="/">Users</a>
           </li>
         )}
-        {props.isLoggedIn && (
+        {!props.isLoggedIn && (
           <li>
             <a href="/">Admin</a>
           </li>

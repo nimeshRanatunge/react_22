@@ -21,6 +21,7 @@ const Login = (props) => {
 
   const passwordChangeHandler = (event) => {
     setEnteredPassword(event.target.value);
+    console.log('password change handler');
 
     setFormIsValid(
       event.target.value.trim().length > 6 && enteredEmail.includes('@')
@@ -32,6 +33,7 @@ const Login = (props) => {
   };
 
   const validatePasswordHandler = () => {
+    console.log('password validate handler');
     setPasswordIsValid(enteredPassword.trim().length > 6);
   };
 
